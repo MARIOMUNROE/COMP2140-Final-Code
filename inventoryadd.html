@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Start Registration</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Add Inventory to Database</h1>
+          </div>
+          <div class="panel-body">
+
+            <!-------Post Method used as confidential information will be stored in DB!-->
+            <form action="inventoryadd.php" method="post">
+              <div class="form-group">
+                <label for="id">Id</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="id"
+                  name="id"
+                />
+              </div>
+              <div class="form-group">
+                <label for="name"> Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <!----Section to Upload Image-->
+              <div class="form-group">
+                <label for="image">Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="image"
+                  name="image"
+                />
+              </div>
+              <div class="form-group">
+                <label for="price">Price</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="price"
+                  name="price"
+                />
+              </div>
+
+              <!---Button that sends data to the DB-->
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
