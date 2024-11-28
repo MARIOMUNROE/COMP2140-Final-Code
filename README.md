@@ -1,1 +1,1 @@
-# COMP2140-Final-Code
+Store Management System
